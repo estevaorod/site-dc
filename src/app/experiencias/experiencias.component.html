@@ -1,8 +1,13 @@
-<div class="container mx-auto">
+<div class="container mx-auto my-4">
     <h2 class="text-center text-3xl font-bold uppercase">NOSSAS EXPERIÊNCIAS</h2>
-    <div class="border-2 border-blue-600 w-32 mx-auto my-4">
-    </div>
+    <div class="border-b-4 border-blue-900 w-28 mx-auto my-4"></div>
     <div class="mx-auto text-center text-lg w-2/3">
-        A <span class="font-bold"> Dotcode </span> Consultoria foi criada devido a oportunidade de fornecer soluções de TI com qualidade baseadas em nuvem para empresas de diversos setores. Com a experiência de mais de uma década em TI, inegavelmente trazemos soluções em computação distribuída, desenvolvimento de UI, migração em nuvem, desenvolvimento SaaS e reengenharia de plataformas legadas.
+        A <span class="font-bold"> Dotcode </span> Consultoria foi criada devido a oportunidade de fornecer soluções de
+        TI com qualidade baseadas em nuvem para empresas de diversos setores. Com a experiência de mais de uma década em
+        TI, inegavelmente trazemos soluções em computação distribuída, desenvolvimento de UI, migração em nuvem,
+        desenvolvimento SaaS e reengenharia de plataformas legadas.
+    </div>
+    <div class="grid grid-cols-3 gap-4 mt-4 hover:rounded">
+        <app-card *ngFor="let item of itens" [titulo]="item.titulo" [descricao]="item.descricao"></app-card>
     </div>
 </div>
