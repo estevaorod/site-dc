@@ -7,6 +7,10 @@ import { ServicosComponent } from './servicos/servicos.component';
 import { CardComponent } from './card/card.component';
 import { ExperienciasComponent } from './experiencias/experiencias.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
+import { ClientesComponent } from './clientes/clientes.component';
+import { TecnologiasComponent } from './tecnologias/tecnologias.component';
+import { RodapeComponent } from './rodape/rodape.component';
+import { DivisorComponent } from './divisor/divisor.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { ParceirosComponent } from './parceiros/parceiros.component';
     ServicosComponent,
     CardComponent,
     ExperienciasComponent,
-    ParceirosComponent
+    ParceirosComponent,
+    ClientesComponent,
+    TecnologiasComponent,
+    RodapeComponent,
+    DivisorComponent
   ],
   imports: [
     BrowserModule
