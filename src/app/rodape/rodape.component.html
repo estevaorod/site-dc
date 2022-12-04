@@ -1,6 +1,44 @@
-<div class="bg-[#010033] pt-16 pb-8 mt-4 text-white"> 
-    <div class="container mx-auto">
-        <p class="text-right">©2022 Dotcode Cloud & Arquitetura de Software. Todos os direitos reservados.
+<div class="bg-[#010033] pt-16 pb-8 px-72 mt-24 text-white" id="Contato">
+    <div class="flex justify-center gap-10 mb-10">
+        <div class="bg-white border-2 py-10 px-4 w-[700px] mt-[-120px] rounded">
+            <input class="w-full border-2 rounded my-2 px-4 py-2" *ngFor="let item of ['NOME','EMAIL','TELEFONE','ASSUNTO']"
+                [placeholder]="item">
+            <textarea class="w-full border border-2 rounded my-2 px-4 py-2" rows="5" placeholder="MENSAGEM"></textarea>
+            <button class="text-white bg-blue-600 py-2 px-4 rounded">Enviar</button>
+        </div>
+        <div class="text-white">
+            <span class="text-xl block font-bold">Entre em contato</span>
+            <span>
+                Nossa equipe terá prazer em esclarecer suas dúvidas ou realizar uma apresentação completa de nossos
+                serviços.
+                <br><br>
+                Entre em contato através do formulário ou, se preferir, fale conosco através de um dos canais abaixo.
+                <br><br>
+            </span>
+            <div class="flex gap-4 items-center">
+                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                <span>Rua João Vieira, Ilha de Monte Belo, Vitória - ES</span>
+            </div>
+            <div class="flex gap-4 items-center">
+                <i class="fas fa-envelope text-blue-600"></i>
+                <span>contato@dotcode.com.br</span>
+            </div>
+            <div class="flex gap-4 items-center">
+                <i class="fas fa-phone text-blue-600"></i>
+                <span>(27) 99922-2999</span>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-around">
+        <div class="flex gap-4 items-center">
+            <span class="text-blue-500 font-medium text-lg">Parceiros</span>
+            <img class="h-14" src="https://dotcode.com.br/wp-content/uploads/2022/04/dotcode-microsoft-mvp-logo.png"
+                alt="">
+            <img class="h-14" src="https://dotcode.com.br/wp-content/uploads/2022/04/dotcode-microsoft-partner-logo.png"
+                alt="">
+        </div>
+        <p class="my-auto font-medium text-sm text-blue-500">©2022 Dotcode Cloud & Arquitetura de Software. Todos os
+            direitos reservados.
         </p>
     </div>
 </div>

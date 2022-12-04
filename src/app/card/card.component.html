@@ -1,5 +1,8 @@
-<div class="bg-white p-4 max-w-sm text-center h-60 border-[1px] border-gray-100 hover:rounded-lg hover:shadow-lg">
-    <p class="text-ls font-bold">{{titulo}}</p>
+<div class="bg-white py-8 px-4 max-w-sm h-full text-center border-2 border-gray-100 hover:rounded-lg hover:shadow-lg">
+    <div class="w-28 mx-auto mb-4">
+        <img [src]="urlImagem" alt="">
+    </div>
+    <p class="text-xl font-bold">{{titulo}}</p>
     <app-divisor></app-divisor>
     <p class="mt-8">{{descricao}}</p>
 </div>
